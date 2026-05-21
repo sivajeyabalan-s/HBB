@@ -317,6 +317,66 @@ em {
   display: none;
 }
 
+/* ---------- Mobile drawer ---------- */
+.nav__overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(6, 10, 20, 0.72);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 48;
+  opacity: 0;
+  transition: opacity 0.35s var(--ease);
+}
+.nav__overlay.is-open {
+  display: block;
+  opacity: 1;
+}
+.nav__drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(320px, 85vw);
+  background: var(--navy-2);
+  border-left: 1px solid var(--line-strong);
+  z-index: 49;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 90px 36px 48px;
+  transform: translateX(100%);
+  transition: transform 0.4s var(--ease);
+  overflow-y: auto;
+}
+.nav__drawer.is-open {
+  transform: translateX(0);
+}
+.nav__drawer-links {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.nav__drawer-item {
+  display: block;
+  font-family: var(--f-display);
+  font-size: 20px;
+  color: var(--ivory);
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+  transition: color 0.3s var(--ease), padding-left 0.3s var(--ease);
+}
+.nav__drawer-item:hover {
+  color: var(--gold-2);
+  padding-left: 8px;
+}
+.nav__drawer-cta {
+  margin-top: 36px;
+  text-align: center;
+  justify-content: center;
+}
+
 /* ---------- HERO — asymmetric, Charminar spine ---------- */
 .hero {
   position: relative;
@@ -359,7 +419,7 @@ em {
 .hero__left {
   position: relative;
   z-index: 2;
-  padding: 200px 80px 100px 110px;
+  padding: 140px 56px 70px 77px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -393,13 +453,13 @@ em {
 }
 .hero__title .l1 {
   display: block;
-  font-size: clamp(50.4px, 7.7vw, 117.6px);
+  font-size: clamp(35.3px, 5.4vw, 82.3px);
   line-height: 0.9;
   letter-spacing: -0.02em;
 }
 .hero__title .l2 {
   display: block;
-  font-size: clamp(36.4px, 6.3vw, 91px);
+  font-size: clamp(25.5px, 4.4vw, 63.7px);
   color: var(--gold-2);
   margin-left: clamp(40px, 8vw, 110px);
   line-height: 1;
@@ -427,7 +487,7 @@ em {
 }
 .hero__under-num {
   font-family: var(--f-display);
-  font-size: 64px;
+  font-size: 45px;
   color: var(--gold);
   line-height: 0.8;
   border-right: 1px solid var(--line);
@@ -461,7 +521,7 @@ em {
 .hero__right {
   position: relative;
   z-index: 2;
-  padding: 200px 80px 100px 40px;
+  padding: 140px 56px 70px 28px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -530,7 +590,7 @@ em {
   justify-content: flex-end;
   gap: 12px;
   font-family: var(--f-display);
-  font-size: 26px;
+  font-size: 18px;
   color: var(--ivory);
   transition: color 0.3s var(--ease);
   position: relative;
@@ -614,7 +674,7 @@ em {
 /* ---------- Section system ---------- */
 .section {
   position: relative;
-  padding: 120px 90px;
+  padding: 84px 63px;
 }
 .section--alt {
   background: var(--navy-2);
@@ -623,18 +683,18 @@ em {
 /* Numbered header */
 .sec-head {
   display: grid;
-  grid-template-columns: 140px 1fr auto;
-  gap: 40px;
+  grid-template-columns: auto 1fr auto;
+  gap: 24px;
   align-items: end;
-  margin-bottom: 70px;
+  margin-bottom: 49px;
   position: relative;
-  padding-bottom: 36px;
+  padding-bottom: 25px;
   border-bottom: 1px solid var(--line);
 }
 .sec-head__num {
   font-family: var(--f-display);
   color: var(--gold);
-  font-size: 64px;
+  font-size: 45px;
   line-height: 0.8;
 }
 .sec-head__num small {
@@ -649,7 +709,7 @@ em {
 .sec-head__title {
   font-family: var(--f-display);
   font-weight: 400;
-  font-size: clamp(27px, 3.6vw, 52px);
+  font-size: clamp(18.9px, 2.5vw, 36.4px);
   line-height: 0.98;
   color: var(--ivory);
   letter-spacing: -0.01em;
@@ -698,7 +758,7 @@ em {
 .heritage {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  gap: 56px;
   align-items: start;
 }
 .heritage__left {
@@ -710,7 +770,7 @@ em {
 .heritage__h {
   font-family: var(--f-display);
   font-weight: 400;
-  font-size: clamp(25.2px, 2.8vw, 39.2px);
+  font-size: clamp(17.6px, 2vw, 27.4px);
   line-height: 1.05;
   color: var(--ivory);
   letter-spacing: -0.005em;
@@ -728,7 +788,7 @@ em {
 }
 .heritage__dropcap::first-letter {
   font-family: var(--f-display);
-  font-size: 96px;
+  font-size: 67px;
   float: left;
   line-height: 0.75;
   margin: 6px 16px 0 0;
@@ -761,7 +821,7 @@ em {
 }
 .heritage__facts b {
   font-family: var(--f-display);
-  font-size: 38px;
+  font-size: 27px;
   color: var(--gold-2);
   font-weight: 400;
   line-height: 1;
@@ -876,7 +936,7 @@ em {
   grid-template-columns: 100px 1fr 240px;
   gap: 50px;
   align-items: center;
-  padding: 64px 0;
+  padding: 45px 0;
   border-bottom: 1px solid var(--line);
   position: relative;
 }
@@ -915,7 +975,7 @@ em {
 
 .dish-row__num {
   font-family: var(--f-display);
-  font-size: 80px;
+  font-size: 56px;
   color: var(--gold);
   text-align: right;
   line-height: 0.8;
@@ -952,7 +1012,7 @@ em {
 .dish-row__name {
   font-family: var(--f-display);
   font-weight: 400;
-  font-size: clamp(26.6px, 2.94vw, 42px);
+  font-size: clamp(18.6px, 2.06vw, 29.4px);
   line-height: 1;
   color: var(--ivory);
   letter-spacing: -0.01em;
@@ -980,7 +1040,7 @@ em {
 }
 .dish-row__price {
   font-family: var(--f-display);
-  font-size: 36px;
+  font-size: 25px;
   color: var(--gold-2);
   letter-spacing: 0;
   line-height: 1;
@@ -1046,6 +1106,14 @@ em {
     transform 0.5s var(--ease),
     border-color 0.5s var(--ease);
 }
+.dish-row__img img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .dish-row__img::before {
   content: "";
   position: absolute;
@@ -1053,6 +1121,7 @@ em {
   border: 1px solid var(--line);
   border-radius: inherit;
   pointer-events: none;
+  z-index: 1;
 }
 .dish-row:hover .dish-row__img {
   transform: translateY(-4px);
@@ -1063,8 +1132,8 @@ em {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 50px;
-  margin-top: 20px;
+  padding-top: 35px;
+  margin-top: 14px;
   border-top: 1px solid var(--line);
   flex-wrap: wrap;
   gap: 18px;
@@ -1100,7 +1169,7 @@ em {
   box-shadow: 0 40px 80px -30px rgba(201, 168, 76, 0.35);
 }
 .minaret__arch {
-  aspect-ratio: 5 / 6;
+  aspect-ratio: 4 / 3;
   background: var(--navy-3);
   background-image: var(--arabesque);
   background-size: 80px 80px;
@@ -1112,6 +1181,15 @@ em {
   display: grid;
   place-items: center;
   position: relative;
+  overflow: hidden;
+}
+.minaret__arch img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 .minaret__arch::before {
   content: "";
@@ -1159,7 +1237,7 @@ em {
 }
 
 .minaret__body {
-  padding: 36px 36px 40px;
+  padding: 25px 25px 28px;
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -1175,7 +1253,7 @@ em {
 .minaret__name {
   font-family: var(--f-display);
   font-weight: 400;
-  font-size: 29.4px;
+  font-size: 21px;
   line-height: 1.02;
   color: var(--ivory);
   letter-spacing: -0.005em;
@@ -1259,7 +1337,7 @@ em {
   left: 18px;
   font-family: var(--f-display);
   color: var(--gold);
-  font-size: 24px;
+  font-size: 17px;
   background: rgba(6, 10, 20, 0.7);
   padding: 2px 12px;
   border: 1px solid var(--line);
@@ -1313,12 +1391,12 @@ em {
 /* ---------- V — BANQUET (sealed invitation) ---------- */
 .invitation {
   position: relative;
-  padding: 0 110px;
+  padding: 0 77px;
   background: var(--navy-deep);
 }
 .invitation__box {
   position: relative;
-  padding: 120px 80px;
+  padding: 84px 56px;
   background: var(--navy-2);
   background-image: var(--arabesque);
   background-size: 120px 120px;
@@ -1398,7 +1476,7 @@ em {
 .invitation__title {
   font-family: var(--f-display);
   font-weight: 400;
-  font-size: clamp(37.8px, 4.9vw, 70px);
+  font-size: clamp(26.5px, 3.4vw, 49px);
   line-height: 0.98;
   color: var(--ivory);
   letter-spacing: -0.01em;
@@ -1430,7 +1508,7 @@ em {
 .invitation__stats b {
   font-family: var(--f-display);
   color: var(--gold-2);
-  font-size: 48px;
+  font-size: 34px;
   font-weight: 400;
   line-height: 1;
 }
@@ -1458,7 +1536,7 @@ em {
   position: relative;
   background: var(--navy-deep);
   border: 1px solid var(--line);
-  padding: 36px 32px 28px;
+  padding: 25px 22px 20px;
   display: grid;
   grid-template-rows: auto 1fr auto;
   gap: 26px;
@@ -1492,7 +1570,7 @@ em {
 }
 .postcard__no {
   font-family: var(--f-display);
-  font-size: 30px;
+  font-size: 21px;
   color: var(--gold);
   line-height: 1;
 }
@@ -1512,9 +1590,9 @@ em {
   color: var(--ivory);
 }
 .postcard__body::before {
-  content: "“";
+  content: “””;
   display: block;
-  font-size: 56px;
+  font-size: 39px;
   color: var(--gold);
   line-height: 0.3;
   margin-bottom: 18px;
@@ -1561,7 +1639,7 @@ em {
   margin: 0 auto;
   background: var(--navy-2);
   border: 1px solid var(--line-strong);
-  padding: 64px 80px;
+  padding: 45px 56px;
 }
 .ledger::before {
   content: "";
@@ -1572,7 +1650,7 @@ em {
 }
 .ledger__head {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1591,7 +1669,7 @@ em {
 }
 .ledger__head h3 {
   font-family: var(--f-display);
-  font-size: clamp(28px, 3.22vw, 44.8px);
+  font-size: clamp(19.6px, 2.25vw, 31.4px);
   font-weight: 400;
   line-height: 1;
   color: var(--ivory);
@@ -1682,13 +1760,13 @@ em {
   min-height: 14px;
 }
 .ledger__submit {
-  margin-top: 44px;
+  margin-top: 31px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 18px;
-  padding-top: 32px;
+  padding-top: 22px;
   border-top: 1px dashed var(--line);
 }
 .ledger__submit p {
@@ -1720,7 +1798,7 @@ em {
 }
 .ledger__success h3 {
   font-family: var(--f-display);
-  font-size: 35px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 1.05;
 }
@@ -1739,7 +1817,7 @@ em {
 .footer {
   background: var(--navy-deep);
   border-top: 1px solid var(--line);
-  padding: 110px 110px 30px;
+  padding: 77px 77px 21px;
   position: relative;
 }
 .footer__top {
@@ -1748,8 +1826,8 @@ em {
   align-items: center;
   flex-direction: column;
   gap: 18px;
-  margin-bottom: 80px;
-  padding-bottom: 60px;
+  margin-bottom: 56px;
+  padding-bottom: 42px;
   border-bottom: 1px solid var(--line);
 }
 .footer__charminar {
@@ -1764,7 +1842,7 @@ em {
 }
 .footer__top p {
   font-family: var(--f-display);
-  font-size: 28px;
+  font-size: 20px;
   color: var(--ivory);
   text-align: center;
   max-width: 540px;
@@ -1773,8 +1851,8 @@ em {
 .footer__grid {
   display: grid;
   grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
-  gap: 60px;
-  padding-bottom: 60px;
+  gap: 42px;
+  padding-bottom: 42px;
   border-bottom: 1px solid var(--line);
 }
 .footer__brand {
@@ -1929,19 +2007,19 @@ em {
 /* ---------- Responsive ---------- */
 @media (max-width: 1280px) {
   .section {
-    padding: 100px 54px;
+    padding: 70px 38px;
   }
   .invitation {
-    padding: 0 64px;
+    padding: 0 45px;
   }
   .footer {
-    padding: 100px 64px 30px;
+    padding: 70px 45px 21px;
   }
   .hero__left {
-    padding: 200px 60px 100px 80px;
+    padding: 140px 42px 70px 56px;
   }
   .hero__right {
-    padding: 200px 60px 100px 30px;
+    padding: 140px 42px 70px 21px;
   }
   .hero__scroll {
     left: 80px;
@@ -1970,23 +2048,23 @@ em {
     display: none;
   }
   .section {
-    padding: 70px 22px;
+    padding: 49px 15px;
   }
   .invitation {
-    padding: 0 22px;
+    padding: 0 15px;
   }
   .footer {
-    padding: 80px 22px 30px;
+    padding: 56px 15px 21px;
   }
   .hero {
     grid-template-columns: 1fr;
     min-height: auto;
   }
   .hero__left {
-    padding: 140px 22px 40px;
+    padding: 98px 15px 28px;
   }
   .hero__right {
-    padding: 0 22px 80px;
+    padding: 0 15px 56px;
     align-items: stretch;
   }
   .hero__stamp {
@@ -2005,10 +2083,10 @@ em {
     display: none;
   }
   .hero__title .l1 {
-    font-size: clamp(42px, 9.8vw, 70px);
+    font-size: clamp(29.4px, 6.9vw, 49px);
   }
   .hero__title .l2 {
-    font-size: clamp(32.2px, 8.4vw, 56px);
+    font-size: clamp(22.5px, 5.9vw, 39.2px);
     margin-left: 30px;
   }
   .hero__under {
@@ -2016,7 +2094,7 @@ em {
     gap: 18px;
   }
   .hero__under-num {
-    font-size: 48px;
+    font-size: 34px;
   }
   .hero__index {
     align-items: flex-start;
@@ -2029,18 +2107,18 @@ em {
   .sec-head {
     grid-template-columns: 80px 1fr;
     gap: 24px;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
   }
   .sec-head__aside {
     display: none;
   }
   .sec-head__num {
-    font-size: 46px;
+    font-size: 32px;
   }
 
   .heritage {
     grid-template-columns: 1fr;
-    gap: 60px;
+    gap: 42px;
   }
   .heritage__quote {
     margin-left: 0;
@@ -2051,7 +2129,7 @@ em {
   .dish-row.is-flipped {
     grid-template-columns: 1fr;
     gap: 24px;
-    padding: 48px 0;
+    padding: 34px 0;
   }
   .dish-row__num {
     text-align: left;
@@ -2059,7 +2137,7 @@ em {
     border-bottom: 1px solid var(--line);
     padding-bottom: 12px;
     padding-right: 0;
-    font-size: 56px;
+    font-size: 39px;
     display: flex;
     align-items: baseline;
     gap: 16px;
@@ -2128,14 +2206,14 @@ em {
   }
 
   .invitation__box {
-    padding: 80px 30px;
+    padding: 56px 21px;
   }
   .postcards {
     grid-template-columns: 1fr;
     gap: 20px;
   }
   .ledger {
-    padding: 36px 22px;
+    padding: 25px 15px;
   }
   .ledger__grid {
     grid-template-columns: 1fr;
@@ -2147,7 +2225,7 @@ em {
   }
   .footer__grid {
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    gap: 28px;
   }
   .footer__top p {
     font-size: 22px;

@@ -1,5 +1,45 @@
 /* Hyderabad Biryani & Banquet — shared interactions */
 (function(){
+  // ---------- Mobile hamburger ----------
+  const burger  = document.getElementById('navBurger');
+  const drawer  = document.getElementById('navDrawer');
+  const overlay = document.getElementById('navOverlay');
+  if (burger && drawer && overlay) {
+    const iconMenu  = burger.querySelector('.icon-menu');
+    const iconClose = burger.querySelector('.icon-close');
+
+    function openDrawer() {
+      drawer.classList.add('is-open');
+      overlay.classList.add('is-open');
+      burger.setAttribute('aria-expanded', 'true');
+      burger.setAttribute('aria-label', 'Close menu');
+      drawer.setAttribute('aria-hidden', 'false');
+      overlay.setAttribute('aria-hidden', 'false');
+      if (iconMenu)  iconMenu.style.display  = 'none';
+      if (iconClose) iconClose.style.display = '';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeDrawer() {
+      drawer.classList.remove('is-open');
+      overlay.classList.remove('is-open');
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', 'Open menu');
+      drawer.setAttribute('aria-hidden', 'true');
+      overlay.setAttribute('aria-hidden', 'true');
+      if (iconMenu)  iconMenu.style.display  = '';
+      if (iconClose) iconClose.style.display = 'none';
+      document.body.style.overflow = '';
+    }
+
+    burger.addEventListener('click', () => {
+      drawer.classList.contains('is-open') ? closeDrawer() : openDrawer();
+    });
+    overlay.addEventListener('click', closeDrawer);
+    drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', closeDrawer));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
+  }
+
   // ---------- Nav scroll state ----------
   const nav = document.getElementById('nav');
   if(nav && !nav.classList.contains('nav--solid')){

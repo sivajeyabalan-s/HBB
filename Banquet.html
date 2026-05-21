@@ -24,11 +24,25 @@
     <a href="Banquet.html" class="is-active">Banquet</a>
     <a href="Hyderabad Biryani and Banquet.html#gallery">Gallery</a>
   </div>
-  <a class="nav__cta" href="#enquire">Enquire</a>
-  <button class="nav__burger" aria-label="Menu">
-    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+  <a class="nav__cta" href="#enquire">Order Online</a>
+  <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false" aria-controls="navDrawer">
+    <svg class="icon-menu" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+    <svg class="icon-close" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" style="display:none"><path d="M6 6l12 12M6 18L18 6"/></svg>
   </button>
 </nav>
+
+<!-- ============ MOBILE DRAWER ============ -->
+<div class="nav__overlay" id="navOverlay" aria-hidden="true"></div>
+<div class="nav__drawer" id="navDrawer" role="dialog" aria-label="Navigation" aria-modal="true" aria-hidden="true">
+  <nav class="nav__drawer-links">
+    <a href="Hyderabad Biryani and Banquet.html#about" class="nav__drawer-item">Heritage</a>
+    <a href="Menu.html" class="nav__drawer-item">Menu</a>
+    <a href="Hyderabad Biryani and Banquet.html#services" class="nav__drawer-item">Services</a>
+    <a href="Banquet.html" class="nav__drawer-item">Banquet</a>
+    <a href="Hyderabad Biryani and Banquet.html#gallery" class="nav__drawer-item">Gallery</a>
+  </nav>
+  <a class="nav__drawer-cta btn btn--gold" href="#enquire">Order Online <span class="arr">→</span></a>
+</div>
 
 <!-- ============ PAGE HEAD ============ -->
 <header class="pagehead">
