@@ -31,10 +31,12 @@
     </div>
     <a class="nav__cta" href="#reserve">Order Online</a>
     <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false" aria-controls="navDrawer">
-      <svg class="icon-menu" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5">
+      <svg class="icon-menu" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+        stroke-width="1.5">
         <path d="M3 7h18M3 12h18M3 17h18" />
       </svg>
-      <svg class="icon-close" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" style="display:none">
+      <svg class="icon-close" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+        stroke-width="1.5" style="display:none">
         <path d="M6 6l12 12M6 18L18 6" />
       </svg>
     </button>
@@ -102,17 +104,6 @@
       </div>
     </div>
 
-    <!-- Right column — index -->
-    <div class="hero__right">
-      <nav class="hero__index reveal" data-delay="3" aria-label="Index">
-        <a href="#heritage"><small>I.</small> Heritage</a>
-        <a href="#cuisine"><small>II.</small> Cuisine</a>
-        <a href="#services"><small>III.</small> Services</a>
-        <a href="#gallery"><small>IV.</small> Gallery</a>
-        <a href="Banquet.html"><small>V.</small> Banquet →</a>
-      </nav>
-    </div>
-
     <!-- Scroll cue -->
     <div class="hero__scroll">
       Scroll
@@ -122,7 +113,7 @@
   </header>
 
   <!-- ============ I · HERITAGE ============ -->
-  <section class="section" id="heritage">
+  <section class="section" id="heritage" style="padding-bottom:0">
     <div class="sec-head">
       <div class="sec-head__num">I.
       </div>
@@ -162,15 +153,8 @@
         </div>
       </div>
 
-      <div class="reveal" data-delay="2">
-        <figure class="arch-frame">
-          <span class="arch-frame__num">No. 01 — The Kitchen Window</span>
-          <img src="assets/home/aboutUsImage.png" alt="Our Heritage" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" />
-        </figure>
-        <blockquote class="heritage__quote">
-          <q>The flavour of a true biryani begins long before the fire — in the hands that wash the rice.</q>
-          <cite>— A Nizami proverb</cite>
-        </blockquote>
+      <div class="heritage__img-wrap reveal" data-delay="2">
+        <img src="assets/home/aboutUsImageBG.png" alt="Our Heritage" />
       </div>
     </div>
   </section>
@@ -200,7 +184,7 @@
           <div class="dish-row__title">
             <h3 class="dish-row__name">Dum Gosht <em>Biryani</em></h3>
             <span class="dish-row__dotline"></span>
-            <span class="dish-row__price">₹ 780</span>
+            <span class="dish-row__price">$ 9</span>
           </div>
           <p class="dish-row__desc">
             Long-grain basmati married to slow-braised mutton under a sealed lid,
@@ -223,7 +207,7 @@
           <div class="dish-row__title">
             <h3 class="dish-row__name">Royal Mutton <em>Korma</em></h3>
             <span class="dish-row__dotline"></span>
-            <span class="dish-row__price">₹ 690</span>
+            <span class="dish-row__price">$ 8</span>
           </div>
           <p class="dish-row__desc">
             Tender mutton simmered in a gravy of cashew, almond and yoghurt,
@@ -246,7 +230,7 @@
           <div class="dish-row__title">
             <h3 class="dish-row__name">Shahi <em>Tukda</em></h3>
             <span class="dish-row__dotline"></span>
-            <span class="dish-row__price">₹ 320</span>
+            <span class="dish-row__price">$ 4</span>
           </div>
           <p class="dish-row__desc">
             Bread fried to a deep amber, soaked in saffron rabri and crowned with
@@ -280,14 +264,6 @@
       <article class="minaret reveal">
         <div class="minaret__arch">
           <img src="assets/home/Restaurant Dining.jpg" alt="Restaurant Dining" />
-          <div class="minaret__icon">
-            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round">
-              <path
-                d="M16 4 C 9 4 6 9 6 14 C 6 18 9 21 12 22 L 12 28 L 20 28 L 20 22 C 23 21 26 18 26 14 C 26 9 23 4 16 4 Z" />
-              <path d="M11 12 L 16 8 L 21 12" />
-              <circle cx="16" cy="15" r="2.2" />
-            </svg>
-          </div>
         </div>
         <div class="minaret__body">
           <div class="minaret__num">Minaret I</div>
@@ -305,16 +281,6 @@
       <article class="minaret reveal" data-delay="1">
         <div class="minaret__arch">
           <img src="assets/home/banguet hall.jpg" alt="Banquet Hall" />
-          <div class="minaret__icon">
-            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round">
-              <path d="M4 26 L 28 26" />
-              <path d="M6 26 L 6 14 L 12 10 L 12 26" />
-              <path d="M26 26 L 26 14 L 20 10 L 20 26" />
-              <path d="M12 10 L 16 6 L 20 10" />
-              <path d="M14 26 L 14 18 L 18 18 L 18 26" />
-              <circle cx="16" cy="13" r="1.4" />
-            </svg>
-          </div>
         </div>
         <div class="minaret__body">
           <div class="minaret__num">Minaret II</div>
@@ -332,15 +298,6 @@
       <article class="minaret reveal" data-delay="2">
         <div class="minaret__arch">
           <img src="assets/home/Event and Catering - Copy.jpg" alt="Events & Catering" />
-          <div class="minaret__icon">
-            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round">
-              <path d="M16 4 V 28" />
-              <path d="M8 8 H 24 L 22 12 H 10 Z" />
-              <path d="M6 28 L 26 28" />
-              <path d="M11 16 C 11 19 13 22 16 24 C 19 22 21 19 21 16" />
-              <circle cx="16" cy="6" r="1.5" />
-            </svg>
-          </div>
         </div>
         <div class="minaret__body">
           <div class="minaret__num">Minaret III</div>
@@ -368,38 +325,38 @@
 
     <div class="exhibition">
       <figure class="frame f1 frame--arch reveal">
+        <img src="assets/gallery/buffet2.jpg" alt="Dining room" />
         <span class="frame__num">N° 01</span>
-        <figcaption class="frame__cap">[ Dining room · chandelier wide shot ]</figcaption>
       </figure>
       <figure class="frame f2 reveal" data-delay="1">
+        <img src="assets/gallery/buffet.jpg" alt="Handi warmers" />
         <span class="frame__num">N° 02</span>
-        <figcaption class="frame__cap">[ Handi unsealed table-side ]</figcaption>
       </figure>
       <figure class="frame f3 reveal" data-delay="2">
+        <img src="assets/gallery/chefInBuffet.jpg" alt="Chef plating" />
         <span class="frame__num">N° 03</span>
-        <figcaption class="frame__cap">[ Bavarchi plating ]</figcaption>
       </figure>
       <figure class="frame f4 reveal" data-delay="2">
+        <img src="assets/gallery/faluda.jpg" alt="Falooda" />
         <span class="frame__num">N° 04</span>
-        <figcaption class="frame__cap">[ Saffron in milk · macro ]</figcaption>
       </figure>
       <figure class="frame f5 frame--arch reveal" data-delay="3">
+        <img src="assets/gallery/catering1.jpg" alt="Banquet catering" />
         <span class="frame__num">N° 05</span>
-        <figcaption class="frame__cap">[ Banquet hall · floral mandap ]</figcaption>
       </figure>
       <figure class="frame f6 reveal" data-delay="3">
+        <img src="assets/gallery/server.jpg" alt="Server setting table" />
         <span class="frame__num">N° 06</span>
-        <figcaption class="frame__cap">[ Private dining booth ]</figcaption>
       </figure>
       <figure class="frame f7 reveal" data-delay="4">
+        <img src="assets/gallery/kesari.png" alt="Kesari halwa" />
         <span class="frame__num">N° 07</span>
-        <figcaption class="frame__cap">[ Shahi tukda close · silver vark ]</figcaption>
       </figure>
     </div>
   </section>
 
   <!-- ============ V · BANQUET (invitation) ============ -->
-  <section class="invitation" id="banquet" style="padding-top: 120px; padding-bottom: 120px;">
+  <section class="invitation" id="banquet" style="padding-top: 20px; padding-bottom: 20px;">
     <div class="invitation__box reveal">
       <span class="invitation__corner tl"></span>
       <span class="invitation__corner tr"></span>
