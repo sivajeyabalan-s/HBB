@@ -1936,7 +1936,7 @@ em {
 }
 .footer__contact div {
   display: flex;
- 
+  flex-direction: column;
   gap: 4px;
   margin-bottom: 18px;
 }
@@ -2089,10 +2089,11 @@ em {
   }
   .hero {
     grid-template-columns: 1fr;
-    min-height: auto;
+    min-height: 100vh;
+    min-height: 100svh;
   }
   .hero__left {
-    padding: 98px 15px 28px;
+    padding: 120px 20px 70px;
   }
   .hero__right {
     padding: 0 15px 56px;
@@ -2102,13 +2103,15 @@ em {
     top: 90px;
     right: 22px;
   }
+  /* Keep charminar as an absolute background on mobile — do not pull it into the grid flow */
   .hero__charminar {
-    position: relative;
-    right: auto;
-    bottom: auto;
+    position: absolute;
+    inset: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
-    height: 320px;
-    opacity: 0.35;
+    height: 100%;
+    opacity: 0.18;
   }
   .hero__scroll {
     display: none;
@@ -2150,6 +2153,15 @@ em {
   .heritage {
     grid-template-columns: 1fr;
     gap: 42px;
+  }
+  .heritage__left {
+    padding-right: 0;
+  }
+  .heritage__img-wrap {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
   }
   .heritage__quote {
     margin-left: 0;
@@ -2197,6 +2209,7 @@ em {
   }
   .dish-row__img {
     max-width: 320px;
+    margin: 0 auto;
   }
 
   .services {
@@ -2263,11 +2276,127 @@ em {
   }
 }
 @media (max-width: 640px) {
+  /* Nav — switch to flexbox so burger always pins to the right */
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav__cta {
+    display: none;
+  }
+
+  /* Hero */
+  .hero__under {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .hero__under-num {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+    padding-right: 0;
+    padding-bottom: 12px;
+    font-size: 28px;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    text-align: left;
+  }
+  .hero__ctas {
+    flex-direction: column;
+  }
+  .hero__ctas .btn {
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Section system */
+  .section {
+    padding: 14px 10px;
+  }
+  .sec-head {
+    grid-template-columns: 50px 1fr;
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+  .sec-head__num {
+    font-size: 26px;
+  }
+
+  /* Heritage */
+  .heritage__img-wrap {
+    width: 100%;
+  }
+
+  /* Gallery exhibition — 2-column on phones */
+  .exhibition {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 150px;
+  }
+  .frame.f1 { grid-column: span 2; grid-row: span 2; }
+  .frame.f2 { grid-column: span 2; grid-row: span 1; }
+  .frame.f3 { grid-column: span 1; grid-row: span 1; }
+  .frame.f4 { grid-column: span 1; grid-row: span 1; }
+  .frame.f5 { grid-column: span 2; grid-row: span 1; }
+  .frame.f6 { grid-column: span 1; grid-row: span 1; }
+  .frame.f7 { grid-column: span 2; grid-row: span 1; }
+
+  /* Banquet invitation */
+  .invitation {
+    padding: 0 10px;
+  }
+  .invitation__box {
+    padding: 42px 18px;
+  }
+  .invitation__corner {
+    display: none;
+  }
+  .invitation__stats {
+    gap: 24px;
+  }
+  .invitation__ctas {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+  .invitation__ctas .btn {
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Testimonials */
+  .postcard__body {
+    font-size: 18px;
+  }
+
+  /* Reservation */
+  .ledger {
+    padding: 20px 12px;
+  }
+  .ledger__submit {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+  .ledger__submit .btn {
+    justify-content: center;
+  }
+
+  /* Cuisine foot */
+  .tasting__foot {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Footer */
   .footer__grid {
     grid-template-columns: 1fr;
     gap: 36px;
   }
-  .invitation__corner {
-    display: none;
+  .footer {
+    padding: 42px 12px 20px;
+  }
+  .footer__top p {
+    font-size: 17px;
   }
 }

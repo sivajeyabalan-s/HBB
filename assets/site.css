@@ -115,12 +115,12 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .btn--gold{
   color: var(--navy-deep);
   background: var(--gold);
-  box-shadow: 0 16px 40px -16px rgba(201,168,76,0.6), inset 0 1px 0 rgba(255,255,255,0.25);
+  
 }
 .btn--gold:hover{
   background: var(--gold-2);
   transform: translateY(-2px);
-  box-shadow: 0 22px 50px -18px rgba(201,168,76,0.85), inset 0 1px 0 rgba(255,255,255,0.35);
+ 
 }
 .btn--ghost{
   color: var(--gold);
@@ -689,6 +689,9 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 /* ---------- SERVICES ---------- */
 .services{
   display:grid; grid-template-columns: repeat(3, 1fr); gap: 28px;
+}
+.services--4col{
+  grid-template-columns: repeat(4, 1fr);
 }
 .svc{
   position:relative;
@@ -1515,6 +1518,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   .about__quote{left: 20px; bottom: 20px; max-width: 260px}
   .dishes{grid-template-columns: 1fr; gap: 22px}
   .services{grid-template-columns: 1fr; gap: 18px}
+  .services--4col{grid-template-columns: 1fr 1fr; gap: 20px}
   .testis{grid-template-columns: 1fr}
   .footer__grid{grid-template-columns: 1fr 1fr; gap: 40px}
   .nav__links{display:none}
@@ -1529,7 +1533,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   .reserve__box{padding: 36px 22px}
   .reserve__grid{grid-template-columns: 1fr}
   .footer{padding: 70px 22px 24px}
-  .pagehead{padding: 160px 22px 80px}
+  .pagehead{padding: 140px 22px 70px}
   .menu-grid{grid-template-columns: 1fr}
   .menu-cat__head{flex-wrap:wrap; gap: 12px}
   .halls{grid-template-columns: 1fr; gap: 22px}
@@ -1549,8 +1553,58 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 @media (max-width: 600px){
   .hero__seal{width:170px;height:170px}
   .footer__grid{grid-template-columns: 1fr; gap: 36px}
+  .footer{padding: 48px 15px 20px}
   .about__media{aspect-ratio: 1/1}
   .about__quote{position:static; margin-top: 18px; max-width:none}
   .item{flex-direction: column}
   .item__img{flex-basis: 160px; width: 100%}
+
+  /* Nav — hide CTA so only logo + burger remain */
+  .nav__cta{display: none}
+  .nav{justify-content: space-between}
+
+  /* Page header */
+  .pagehead{padding: 110px 18px 56px}
+  .pagehead__title{font-size: clamp(32px, 9vw, 56px)}
+  .pagehead__lede{font-size: 14px}
+
+  /* Sections */
+  .section{padding: 48px 14px}
+  .section__head{margin-bottom: 50px}
+
+  /* Banquet stats — 2×2 on phones */
+  .banquet-stats{grid-template-columns: 1fr 1fr}
+  .banquet-hero{padding: 0 14px}
+
+  /* Banquet inclusions — stack on phones */
+  .services--4col{grid-template-columns: 1fr}
+
+  /* Banquet packages */
+  .pkg{padding: 32px 22px}
+
+  /* FAQ summaries */
+  .section details summary{font-size: 18px}
+
+  /* Reservation form */
+  .reserve__box{padding: 28px 14px}
+  .reserve__submit{margin-top: 24px}
+
+  /* Halls */
+  .hall__body{padding: 24px}
+
+  /* Menu category head */
+  .menu-cat__sub{margin-left: 0; width: 100%}
+  .menu-cat__title{font-size: clamp(20px, 5.5vw, 32px)}
+
+  /* Testimonials */
+  .testi__body{font-size: 18px}
+
+  /* Footer */
+  .footer__grid{grid-template-columns: 1fr; gap: 36px}
+
+  /* Buttons full-width in CTA blocks */
+  .hero__ctas{flex-direction: column; align-items: stretch}
+  .hero__ctas .btn{justify-content: center; text-align: center}
+  .banquet__ctas{flex-direction: column; align-items: stretch}
+  .banquet__ctas .btn{justify-content: center; text-align: center}
 }
