@@ -244,8 +244,12 @@
   .dish-row.is-flipped .dish-row__foot {
     justify-content: flex-start;
   }
+  .dish-row__num  { order: 1; }
+  .dish-row__img  { order: 2; max-width: 260px; margin: 0 auto; }
+  .dish-row__body { order: 3; }
+}
+@media (max-width: 480px) {
   .dish-row__img {
-    max-width: 320px;
-    margin: 0 auto;
+    max-width: 200px;
   }
 }

@@ -180,7 +180,10 @@
 
 @media (max-width: 768px) {
   .ledger {
-    padding: 25px 15px;
+    padding: 28px 22px;
+  }
+  .ledger::before {
+    inset: 8px;
   }
   .ledger__grid {
     grid-template-columns: 1fr;
@@ -189,15 +192,19 @@
   .ledger__submit {
     justify-content: center;
     text-align: center;
-  }
-}
-@media (max-width: 640px) {
-  .ledger {
-    padding: 20px 12px;
-  }
-  .ledger__submit {
     flex-direction: column;
     align-items: stretch;
-    text-align: center;
+  }
+  .ledger__submit .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .ledger {
+    padding: 22px 16px;
+  }
+  .ledger::before {
+    inset: 6px;
   }
 }

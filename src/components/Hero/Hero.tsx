@@ -21,7 +21,7 @@ export default function Hero() {
 
         <div className="hero__under reveal" data-delay="2">
           <div className="hero__under-num">I</div>
-          <div>
+          <div className='hero_sub2'>
             <p className="hero__sub">
               A Nawabi table set beneath the watch of the four minarets — slow-cooked dum biryani,
               heirloom kormas, and ceremony fit for any occasion. Restaurant, banquet hall and event
