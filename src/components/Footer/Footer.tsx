@@ -1,23 +1,30 @@
-import { Link } from 'react-router-dom'
-import './Footer.css'
+import { Link } from "react-router-dom";
+import "./Footer.css";
 
 interface FooterProps {
-  showTop?: boolean
-  contactLabel?: string
-  contactInfo?: string
+  showTop?: boolean;
+  contactLabel?: string;
+  contactInfo?: string;
 }
 
 export default function Footer({
   showTop = false,
-  contactLabel = 'Reserve',
-  contactInfo = '+91 90000 00000\nhello@example.com',
+  contactLabel = "Reserve",
+  contactInfo = "+91 90000 00000\nhello@example.com",
 }: FooterProps) {
   return (
     <footer className="footer">
       {showTop && (
         <div className="footer__top">
           <div className="footer__charminar" aria-hidden="true">
-            <svg viewBox="0 0 240 280" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" strokeLinecap="round">
+            <svg
+              viewBox="0 0 240 280"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.4"
+              strokeLinejoin="round"
+              strokeLinecap="round"
+            >
               <path d="M 45 280 L 45 175 L 195 175 L 195 280" />
               <path d="M 42 175 L 198 175" />
               <path d="M 42 170 L 198 170" />
@@ -30,33 +37,67 @@ export default function Footer({
               <path d="M 37 70 L 37 58 L 49 58 L 49 70" />
               <path d="M 35 58 Q 32 38 43 30 Q 54 38 51 58" />
               <path d="M 43 30 L 43 8" />
-              <circle cx="43" cy="18" r="2.4" fill="currentColor" stroke="none" />
+              <circle
+                cx="43"
+                cy="18"
+                r="2.4"
+                fill="currentColor"
+                stroke="none"
+              />
               <path d="M 212 175 L 212 122 L 182 122 L 182 175" />
               <path d="M 209 117 L 209 96 L 185 96 L 185 117" />
               <path d="M 206 91 L 206 75 L 188 75 L 188 91" />
               <path d="M 203 70 L 203 58 L 191 58 L 191 70" />
               <path d="M 205 58 Q 208 38 197 30 Q 186 38 189 58" />
               <path d="M 197 30 L 197 8" />
-              <circle cx="197" cy="18" r="2.4" fill="currentColor" stroke="none" />
+              <circle
+                cx="197"
+                cy="18"
+                r="2.4"
+                fill="currentColor"
+                stroke="none"
+              />
             </svg>
           </div>
-          <p>Beneath the watch of the four minarets, the dastarkhwan is laid every evening.</p>
+          <p>
+            Beneath the watch of the four minarets, the dastarkhwan is laid
+            every evening.
+          </p>
         </div>
       )}
 
       <div className="footer__grid">
         <div className="footer__brand">
-          <div className="footer__seal"><img src="/assets/logo.png" alt="" /></div>
-          <p>Restaurant · Banquet Hall · Events &amp; Catering. A Nawabi house of hospitality, opening its dastarkhwan to your most precious occasions.</p>
+          <div className="footer__seal">
+            <img src="/assets/logo.png" alt="" />
+          </div>
+          <p>
+            Restaurant · Banquet Hall · Events &amp; Catering. A Nawabi house of
+            hospitality, opening its dastarkhwan to your most precious
+            occasions.
+          </p>
         </div>
         <div>
           <h4>Visit</h4>
           <ul>
-            <li><a href="/#heritage">Heritage</a></li>
-            <li><Link to="/menu">Menu</Link></li>
-            <li><a href="/#services">Services</a></li>
-            <li><Link to="/banquet">Banquet Hall</Link></li>
-            <li><a href="/#reserve">Reservations</a></li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <a href="/#heritage">Heritage</a>
+            </li>
+            <li>
+              <Link to="/menu">Menu</Link>
+            </li>
+            <li>
+              <a href="/#services">Services</a>
+            </li>
+            <li>
+              <Link to="/banquet">Banquet Hall</Link>
+            </li>
+            <li>
+              <a href="/#reserve">Reservations</a>
+            </li>
           </ul>
         </div>
         <div>
@@ -71,33 +112,61 @@ export default function Footer({
         <div className="footer__contact">
           <div>
             <small>Address</small>
-            <span>123 Sample Street, Sample City,<br />Sample — 12345</span>
+            <span>
+              123 Sample Street, Sample City,
+              <br />
+              Sample — 12345
+            </span>
           </div>
           <div>
             <small>{contactLabel}</small>
-            <span dangerouslySetInnerHTML={{ __html: contactInfo.replace(/\n/g, '<br/>') }} />
+            <span
+              dangerouslySetInnerHTML={{
+                __html: contactInfo.replace(/\n/g, "<br/>"),
+              }}
+            />
           </div>
           <div className="footer__social">
             <a href="#" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              >
                 <rect x="3" y="3" width="18" height="18" rx="5" />
                 <circle cx="12" cy="12" r="4" />
                 <circle cx="17.5" cy="6.5" r=".8" fill="currentColor" />
               </svg>
             </a>
             <a href="#" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              >
                 <path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H7v4h3v8h4v-8h3l1-4h-4V8z" />
               </svg>
             </a>
             <a href="#" aria-label="YouTube">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              >
                 <rect x="3" y="6" width="18" height="12" rx="3" />
                 <path d="M11 9.5 L 15 12 L 11 14.5 Z" fill="currentColor" />
               </svg>
             </a>
             <a href="#" aria-label="WhatsApp">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              >
                 <path d="M4 20 L 5.5 15.5 A 8 8 0 1 1 8.5 18.5 Z" />
                 <path d="M9 10 c 0 3 2 5 5 5 l 1.5 -1.5 -2 -1 -1 1 c -1 -.5 -2 -1.5 -2.5 -2.5 l 1 -1 -1 -2 z" />
               </svg>
@@ -106,12 +175,17 @@ export default function Footer({
         </div>
       </div>
       <div className="footer__base">
-        
-        <a className="made" href="https://brisque.com" target="_blank" rel="noopener noreferrer">
-          Powered by <img src="/assets/maghil.webp" alt="Maghil" className="made__logo" /> 2026
+        <a
+          className="made"
+          href="https://brisque.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Powered by{" "}
+          <img src="/assets/maghil.webp" alt="Maghil" className="made__logo" />{" "}
+          2026
         </a>
-        
       </div>
     </footer>
-  )
+  );
 }
