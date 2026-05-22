@@ -1,9 +1,16 @@
 .section {
   position: relative;
   padding: 30px 43px;
+  background-color: transparent;
 }
 .section--alt {
-  background: var(--navy-2);
+  background-color: transparent;
+}
+.section--deep {
+  background-color: transparent;
+}
+.section--patterned {
+  background-color: transparent;
 }
 .sec-head {
   display: grid;

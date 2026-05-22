@@ -2,7 +2,7 @@
   position: relative;
   padding: 200px 48px 100px;
   text-align: center;
-  background: var(--navy);
+  background: var(--navy-deep);
   overflow: hidden;
   border-bottom: 1px solid var(--line);
 }

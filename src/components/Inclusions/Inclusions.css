@@ -10,7 +10,7 @@
   position: relative;
   padding: 56px 40px;
   border: 1px solid var(--line);
-  background: var(--navy);
+  background: var(--navy-2);
   transition: all 0.45s var(--ease);
   overflow: hidden;
 }
