@@ -106,10 +106,11 @@ export default function Footer({
         </div>
       </div>
       <div className="footer__base">
-        <span>© 2026 Hyderabad Biryani &amp; Banquet · All Rights Reserved</span>
+        
         <a className="made" href="https://brisque.com" target="_blank" rel="noopener noreferrer">
-          Powered by <img src="/assets/maghil.png" alt="Maghil" className="made__logo" /> 2026
+          Powered by <img src="/assets/maghil.webp" alt="Maghil" className="made__logo" /> 2026
         </a>
+        
       </div>
     </footer>
   )
