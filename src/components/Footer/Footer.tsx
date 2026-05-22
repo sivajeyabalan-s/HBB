@@ -10,7 +10,7 @@ interface FooterProps {
 export default function Footer({
   showTop = false,
   contactLabel = 'Reserve',
-  contactInfo = '+91 98765 43210\nreservations@hyderabadbiryani.in',
+  contactInfo = '+91 90000 00000\nhello@example.com',
 }: FooterProps) {
   return (
     <footer className="footer">
@@ -71,7 +71,7 @@ export default function Footer({
         <div className="footer__contact">
           <div>
             <small>Address</small>
-            <span>4-1-Royal Avenue, Banjara Hills,<br />Hyderabad — 500034</span>
+            <span>123 Sample Street, Sample City,<br />Sample — 12345</span>
           </div>
           <div>
             <small>{contactLabel}</small>
