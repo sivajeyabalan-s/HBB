@@ -1,0 +1,9 @@
+.halls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+}
+
+@media (max-width: 1024px) {
+  .halls { grid-template-columns: 1fr; gap: 22px; }
+}

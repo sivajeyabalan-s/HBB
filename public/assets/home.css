@@ -1936,7 +1936,7 @@ em {
 }
 .footer__contact div {
   display: flex;
-  flex-direction: column;
+  
   gap: 4px;
   margin-bottom: 18px;
 }

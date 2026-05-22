@@ -1,0 +1,107 @@
+.postcards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+.postcard {
+  position: relative;
+  background: var(--navy-deep);
+  border: 1px solid var(--line);
+  padding: 25px 22px 20px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 26px;
+}
+.postcard__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 18px;
+  border-bottom: 1px dashed var(--line);
+}
+.postcard__stamp {
+  border: 1px dashed var(--gold);
+  padding: 8px 14px;
+  font-family: var(--f-mark);
+  font-size: 9px;
+  letter-spacing: 0.35em;
+  color: var(--gold);
+  text-transform: uppercase;
+  text-align: center;
+  transform: rotate(-2deg);
+}
+.postcard__stamp b {
+  display: block;
+  font-family: var(--f-display);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--ivory);
+  letter-spacing: 0;
+  margin-top: 2px;
+}
+.postcard__no {
+  font-family: var(--f-display);
+  font-size: 21px;
+  color: var(--gold);
+  line-height: 1;
+}
+.postcard__no small {
+  display: block;
+  font-family: var(--f-mark);
+  font-size: 9px;
+  letter-spacing: 0.35em;
+  color: var(--ivory-dim);
+  text-transform: uppercase;
+  margin-top: 6px;
+}
+.postcard__body {
+  font-family: var(--f-display);
+  font-size: 22px;
+  line-height: 1.4;
+  color: var(--ivory);
+}
+.postcard__body::before {
+  content: "\201C";
+  display: block;
+  font-size: 39px;
+  color: var(--gold);
+  line-height: 0.3;
+  margin-bottom: 18px;
+}
+.postcard__foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+  gap: 14px;
+}
+.postcard__who {
+  font-family: var(--f-mark);
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  color: var(--gold);
+  text-transform: uppercase;
+}
+.postcard__who small {
+  display: block;
+  font-family: var(--f-body);
+  font-weight: 300;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--ivory-dim);
+  text-transform: none;
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .postcards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+@media (max-width: 640px) {
+  .postcard__body {
+    font-size: 18px;
+  }
+}

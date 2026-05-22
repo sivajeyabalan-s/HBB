@@ -1,0 +1,123 @@
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+  position: relative;
+}
+.minaret {
+  position: relative;
+  background: var(--navy-deep);
+  border: 1px solid var(--line);
+  padding: 0;
+  overflow: hidden;
+  transition:
+    border-color 0.4s var(--ease),
+    transform 0.5s var(--ease),
+    box-shadow 0.5s var(--ease);
+}
+.minaret:hover {
+  border-color: var(--gold);
+}
+.minaret__arch {
+  aspect-ratio: 4 / 3;
+  background: var(--navy-3);
+  background-image: var(--arabesque);
+  background-size: 80px 80px;
+  background-blend-mode: overlay;
+  border-radius: 100% 100% 0 0 / 18% 18% 0 0;
+  margin: 18px 18px 0;
+  border: 1px solid var(--line);
+  border-bottom: none;
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.minaret__arch img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.minaret__arch::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border: 1px solid var(--line-faint);
+  border-bottom: none;
+  border-radius: inherit;
+}
+.minaret__arch::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 30%, rgba(201, 168, 76, 0.22), transparent 65%);
+  pointer-events: none;
+}
+.minaret__body {
+  padding: 25px 25px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: center;
+}
+.minaret__num {
+  font-family: var(--f-mark);
+  font-size: 10px;
+  letter-spacing: 0.42em;
+  color: var(--gold);
+  text-transform: uppercase;
+}
+.minaret__name {
+  font-family: var(--f-display);
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 1.02;
+  color: var(--ivory);
+  letter-spacing: -0.005em;
+}
+.minaret__name em {
+  font-style: normal;
+  color: var(--gold-2);
+}
+.minaret__desc {
+  color: var(--ivory-dim);
+  font-size: 14px;
+  line-height: 1.85;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+.minaret__list {
+  list-style: none;
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+.minaret__list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  color: var(--ivory);
+  font-weight: 300;
+}
+.minaret__list li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  transform: rotate(45deg);
+  background: var(--gold);
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .services {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

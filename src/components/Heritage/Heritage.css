@@ -1,0 +1,215 @@
+.section {
+  position: relative;
+  padding: 30px 43px;
+}
+.section--alt {
+  background: var(--navy-2);
+}
+.sec-head {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 24px;
+  align-items: end;
+  margin-bottom: 49px;
+  position: relative;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--line);
+}
+.sec-head__num {
+  font-family: var(--f-display);
+  color: var(--gold);
+  font-size: 45px;
+  line-height: 0.8;
+}
+.sec-head__num small {
+  display: block;
+  font-family: var(--f-mark);
+  font-size: 9.5px;
+  letter-spacing: 0.4em;
+  color: var(--ivory-dim);
+  margin-top: 14px;
+  text-transform: uppercase;
+}
+.sec-head__title {
+  font-family: var(--f-display);
+  font-weight: 400;
+  font-size: clamp(18.9px, 2.5vw, 36.4px);
+  line-height: 0.98;
+  color: var(--ivory);
+  letter-spacing: -0.01em;
+}
+.sec-head__title em {
+  font-style: normal;
+  color: var(--gold-2);
+}
+.sec-head__aside {
+  font-family: var(--f-mark);
+  font-size: 10px;
+  letter-spacing: 0.4em;
+  color: var(--gold);
+  text-transform: uppercase;
+  text-align: right;
+  align-self: end;
+  padding-bottom: 6px;
+}
+.divider-charminar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  padding: 28px 0;
+}
+.divider-charminar .bar {
+  flex: 1;
+  max-width: 220px;
+  height: 1px;
+  background: var(--gold);
+  opacity: 0.55;
+}
+.divider-charminar .mark {
+  width: 80px;
+  height: 64px;
+  background-image: var(--charminar-mark);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.85;
+}
+.heritage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: start;
+}
+.heritage__left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-right: 20px;
+}
+.heritage__h {
+  font-family: var(--f-display);
+  font-weight: 400;
+  font-size: clamp(17.6px, 2vw, 27.4px);
+  line-height: 1.05;
+  color: var(--ivory);
+  letter-spacing: -0.005em;
+}
+.heritage__h em {
+  font-style: normal;
+  color: var(--gold-2);
+}
+.heritage__dropcap {
+  color: var(--ivory-dim);
+  font-size: 16px;
+  line-height: 1.9;
+  font-weight: 300;
+}
+.heritage__dropcap::first-letter {
+  font-family: var(--f-display);
+  font-size: 67px;
+  float: left;
+  line-height: 0.75;
+  margin: 6px 16px 0 0;
+  color: var(--gold-2);
+  font-weight: 400;
+}
+.heritage__body {
+  color: var(--ivory-dim);
+  font-size: 15px;
+  line-height: 1.85;
+  font-weight: 300;
+}
+.heritage__facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-top: 14px;
+  border-top: 1px solid var(--line);
+}
+.heritage__facts div {
+  padding: 22px 0;
+  border-right: 1px solid var(--line);
+}
+.heritage__facts div:last-child {
+  border-right: 0;
+  padding-left: 18px;
+}
+.heritage__facts div:not(:first-child) {
+  padding-left: 18px;
+}
+.heritage__facts b {
+  font-family: var(--f-display);
+  font-size: 27px;
+  color: var(--gold-2);
+  font-weight: 400;
+  line-height: 1;
+  display: block;
+  margin-bottom: 6px;
+}
+.heritage__facts span {
+  font-family: var(--f-mark);
+  font-size: 9.5px;
+  letter-spacing: 0.3em;
+  color: var(--ivory-dim);
+  text-transform: uppercase;
+}
+.heritage__img-wrap {
+  position: relative;
+  width: 65%;
+  margin-left: auto;
+  padding-bottom: 0;
+  margin-right: 100px;
+  margin-top: -50px;
+}
+.heritage__img-wrap img {
+  width: 100%;
+  height: auto;
+  max-height: 580px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .sec-head {
+    grid-template-columns: 80px 1fr;
+    gap: 24px;
+    margin-bottom: 35px;
+  }
+  .sec-head__aside {
+    display: none;
+  }
+  .sec-head__num {
+    font-size: 32px;
+  }
+  .heritage {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+  .heritage__left {
+    padding-right: 0;
+  }
+  .heritage__img-wrap {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+  }
+}
+@media (max-width: 640px) {
+  .section {
+    padding: 14px 10px;
+  }
+  .sec-head {
+    grid-template-columns: 50px 1fr;
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+  .sec-head__num {
+    font-size: 26px;
+  }
+  .heritage__img-wrap {
+    width: 100%;
+  }
+}
