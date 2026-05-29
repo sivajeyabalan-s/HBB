@@ -6,7 +6,7 @@ export default function Cuisine() {
     <section className="section section--alt" id="cuisine">
       <div className="sec-head">
         <div className="sec-head__num">II.</div>
-        <h2 className="sec-head__title reveal">The court's table, <em>served nightly.</em></h2>
+        <h2 className="sec-head__title reveal">The finest from our kitchen, <em>served nightly.</em></h2>
         <div className="sec-head__aside">Signature Cuisine</div>
       </div>
 
@@ -28,11 +28,11 @@ export default function Cuisine() {
         <DishRow
           num="II"
           numLabel="From the Korma Pot"
-          sub="From the Nawab's Kitchen"
+          sub="From the Traditional Kitchen"
           name="Royal Mutton <em>Korma</em>"
           price="$ 8"
           desc="Tender mutton simmered in a gravy of cashew, almond and yoghurt, finished with kewra water and a careful glaze of pure ghee."
-          tagLabel="Nawabi Recipe"
+          tagLabel="Traditional Recipe"
           spiceLabel="Spice"
           spiceDots={1}
           totalDots={3}

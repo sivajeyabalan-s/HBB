@@ -110,7 +110,7 @@ export default function Menu() {
         crumbLabel="The Menu"
         crumbTo="/"
         title="The Royal <em>Menu</em>"
-        lede="Carried down from a Nawabi household — eighty plates across six courses, cooked the slow way and served the gentle way."
+        lede="Drawn from kitchens across India — eighty plates across six courses, cooked the slow way and served the gentle way."
       />
       <section className="section">
         <div className="wrap">

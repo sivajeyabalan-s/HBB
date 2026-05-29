@@ -67,22 +67,6 @@ export default function ReservationForm() {
 
       <form className="ledger reveal" onSubmit={handleSubmit} noValidate>
         <div className="ledger__head">
-          <div className="charminar" aria-hidden="true">
-            <svg viewBox="0 0 240 280" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinejoin="round" strokeLinecap="round">
-              <path d="M 45 280 L 45 175 L 195 175 L 195 280" />
-              <path d="M 100 280 L 100 230 Q 100 205 120 205 Q 140 205 140 230 L 140 280" />
-              <path d="M 28 175 L 28 122 L 58 122 L 58 175" />
-              <path d="M 31 117 L 31 96 L 55 96 L 55 117" />
-              <path d="M 34 91 L 34 75 L 52 75 L 52 91" />
-              <path d="M 35 58 Q 32 38 43 30 Q 54 38 51 58" />
-              <path d="M 43 30 L 43 8" />
-              <path d="M 212 175 L 212 122 L 182 122 L 182 175" />
-              <path d="M 209 117 L 209 96 L 185 96 L 185 117" />
-              <path d="M 206 91 L 206 75 L 188 75 L 188 91" />
-              <path d="M 205 58 Q 208 38 197 30 Q 186 38 189 58" />
-              <path d="M 197 30 L 197 8" />
-            </svg>
-          </div>
           <h3>Reserve your <em>evening.</em></h3>
           <p>Reserve Your Table</p>
         </div>

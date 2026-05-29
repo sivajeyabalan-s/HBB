@@ -17,7 +17,7 @@ export default function Halls() {
           <Hall
             name="Falaknuma <em>Hall</em>"
             sub="The Grand Hall"
-            desc="The larger of the two — a vaulted ceiling crowned by a hand-cut Bohemian chandelier, marble flooring laid in concentric arabesques, and a raised stage for the wedding mandap."
+            desc="The larger of the two — a vaulted ceiling crowned by a hand-cut Bohemian chandelier, marble flooring laid in intricate floral patterns, and a raised stage for the wedding mandap."
             specs={{ seated: '500', standing: '700', sqft: '8,400' }}
             imgSrc="/assets/banquet/Falaknuma Hall.jpg"
             delay={1}
@@ -25,7 +25,7 @@ export default function Halls() {
           <Hall
             name="Chowmahalla <em>Hall</em>"
             sub="The Private Hall"
-            desc="The intimate hall — wood-panelled walls, a sky of pendant brass lamps, and a curtained anteroom for nikaah or family ceremonies. Best for engagements, milad and corporate evenings."
+            desc="The intimate hall — wood-panelled walls, a sky of pendant brass lamps, and a curtained anteroom for family ceremonies. Best for engagements, receptions and corporate evenings."
             specs={{ seated: '180', standing: '260', sqft: '3,200' }}
             imgSrc="/assets/banquet/Chowmahalla Hall.jpg"
             delay={2}

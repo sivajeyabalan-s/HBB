@@ -20,7 +20,7 @@ export default function Voices() {
         <Postcard
           no="N° 02"
           noLabel="From the Table"
-          body="The korma is the closest I have come to my grandmother's kitchen in Charminar. Slow, deep, and quietly perfect."
+          body="The korma is the closest I have come to my grandmother's kitchen. Slow, deep, and quietly perfect."
           guest="Tariq Hussain"
           occasion="Regular Patron"
           delay={1}

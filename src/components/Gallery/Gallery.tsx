@@ -75,7 +75,7 @@ export default function Gallery() {
           </figure>
         ))}
         <div className="frame frame--mark reveal" aria-hidden="true">
-          <div className="divider-charminar">
+          <div className="divider-mark">
             <span className="mark"></span>
           </div>
         </div>

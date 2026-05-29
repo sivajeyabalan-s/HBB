@@ -59,24 +59,24 @@
   align-self: end;
   padding-bottom: 6px;
 }
-.divider-charminar {
+.divider-mark {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 22px;
   padding: 28px 0;
 }
-.divider-charminar .bar {
+.divider-mark .bar {
   flex: 1;
   max-width: 220px;
   height: 1px;
   background: var(--gold);
   opacity: 0.55;
 }
-.divider-charminar .mark {
-  width: 80px;
-  height: 64px;
-  background-image: var(--charminar-mark);
+.divider-mark .mark {
+  width: 60px;
+  height: 60px;
+  background-image: var(--lotus-mark);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

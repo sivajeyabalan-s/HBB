@@ -16,52 +16,8 @@ export default function Footer({
     <footer className="footer">
       {showTop && (
         <div className="footer__top">
-          <div className="footer__charminar" aria-hidden="true">
-            <svg
-              viewBox="0 0 240 280"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.4"
-              strokeLinejoin="round"
-              strokeLinecap="round"
-            >
-              <path d="M 45 280 L 45 175 L 195 175 L 195 280" />
-              <path d="M 42 175 L 198 175" />
-              <path d="M 42 170 L 198 170" />
-              <path d="M 100 280 L 100 230 Q 100 205 120 205 Q 140 205 140 230 L 140 280" />
-              <path d="M 60 280 L 60 250 Q 60 238 72 238 Q 84 238 84 250 L 84 280" />
-              <path d="M 156 280 L 156 250 Q 156 238 168 238 Q 180 238 180 250 L 180 280" />
-              <path d="M 28 175 L 28 122 L 58 122 L 58 175" />
-              <path d="M 31 117 L 31 96 L 55 96 L 55 117" />
-              <path d="M 34 91 L 34 75 L 52 75 L 52 91" />
-              <path d="M 37 70 L 37 58 L 49 58 L 49 70" />
-              <path d="M 35 58 Q 32 38 43 30 Q 54 38 51 58" />
-              <path d="M 43 30 L 43 8" />
-              <circle
-                cx="43"
-                cy="18"
-                r="2.4"
-                fill="currentColor"
-                stroke="none"
-              />
-              <path d="M 212 175 L 212 122 L 182 122 L 182 175" />
-              <path d="M 209 117 L 209 96 L 185 96 L 185 117" />
-              <path d="M 206 91 L 206 75 L 188 75 L 188 91" />
-              <path d="M 203 70 L 203 58 L 191 58 L 191 70" />
-              <path d="M 205 58 Q 208 38 197 30 Q 186 38 189 58" />
-              <path d="M 197 30 L 197 8" />
-              <circle
-                cx="197"
-                cy="18"
-                r="2.4"
-                fill="currentColor"
-                stroke="none"
-              />
-            </svg>
-          </div>
           <p>
-            Beneath the watch of the four minarets, the dastarkhwan is laid
-            every evening.
+            From the tandoor to the tawa, the table is laid every evening.
           </p>
         </div>
       )}
@@ -72,9 +28,9 @@ export default function Footer({
             <img src="/assets/logo.png" alt="" />
           </div>
           <p>
-            Restaurant · Banquet Hall · Events &amp; Catering. A Nawabi house of
-            hospitality, opening its dastarkhwan to your most precious
-            occasions.
+            Restaurant · Banquet Hall · Events &amp; Catering. A house of Indian
+            hospitality — bringing the finest of North, South and Punjabi kitchens
+            under one roof.
           </p>
         </div>
         <div>
@@ -106,7 +62,7 @@ export default function Footer({
             <li>Mon — Thu · 6:30 PM – 11:30 PM</li>
             <li>Fri — Sun · 12:00 PM – 12:00 AM</li>
             <li>Banquet · by appointment</li>
-            <li>Closed on Eid &amp; Diwali</li>
+            <li>Closed on Diwali &amp; Holi</li>
           </ul>
         </div>
         <div className="footer__contact">

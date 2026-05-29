@@ -24,7 +24,7 @@ export default function Banquet() {
         crumbLabel="The Banquet"
         crumbTo="/"
         title="The <em>Banquet</em>"
-        lede="Two ornate halls, an in-house décor atelier, and a brigade of fifty in the kitchen — ready to host your day in the colours of the Nizami court."
+        lede="Two ornate halls, an in-house décor atelier, and a brigade of fifty in the kitchen — ready to host your day in grand Indian style."
         ctas={[
           { label: 'View the Halls', href: '#halls', variant: 'ghost' },
           { label: 'Enquire Now', href: '#enquire', variant: 'gold' },

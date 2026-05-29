@@ -51,7 +51,7 @@
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 0.28em;
-  color: var(--ivory);
+  color: #f5ecd7;
   line-height: 1.1;
 }
 .nav__name small {
@@ -74,7 +74,7 @@
 }
 .nav__links a {
   position: relative;
-  color: var(--ivory);
+  color: #f5ecd7;
   opacity: 0.82;
   transition:
     color 0.3s var(--ease),
@@ -111,7 +111,7 @@
   font-size: 10.5px;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: var(--navy-deep);
+  color: #060a14;
   background: var(--gold);
   padding: 12px 22px;
   border: 1px solid var(--gold-2);

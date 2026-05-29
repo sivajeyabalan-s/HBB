@@ -11,9 +11,9 @@ export default function Services() {
 
       <div className="services">
         <Minaret
-          num="Minaret I"
+          num="Wing I"
           name="Restaurant <em>Dining</em>"
-          desc="An eighty-seat fine-dining room — low light, copper-leaf ceiling, table-side biryani service from a sealed handi."
+          desc="An eighty-seat fine-dining room — warm light, copper-leaf ceiling, table-side biryani service from a sealed handi."
           list={[
             'Open daily · 6.30 PM — 11.30 PM',
             'À la carte &amp; chef\'s tasting menu',
@@ -23,9 +23,9 @@ export default function Services() {
           imgAlt="Restaurant Dining"
         />
         <Minaret
-          num="Minaret II"
+          num="Wing II"
           name="Banquet <em>Hall</em>"
-          desc="Two ornate halls seating up to 500 guests. Hand-cut chandeliers, marble floors and a stage dressed in the Nizami style."
+          desc="Two ornate halls seating up to 500 guests. Hand-cut chandeliers, marble floors and a grand stage for every celebration."
           list={[
             'Capacity · 80 – 500 guests',
             'In-house décor &amp; lighting team',
@@ -36,11 +36,11 @@ export default function Services() {
           delay={1}
         />
         <Minaret
-          num="Minaret III"
+          num="Wing III"
           name="Events &amp; <em>Catering</em>"
-          desc="Off-site catering for weddings, milad and corporate gatherings — our kitchen travels, the silver service follows."
+          desc="Off-site catering for weddings, receptions and corporate gatherings — our kitchen travels, the silver service follows."
           list={[
-            'Weddings, mehndi, walima &amp; sangeet',
+            'Weddings, mehndi, receptions &amp; sangeet',
             'Custom menus across 6 cuisines',
             'Service staff in livery, on-site',
           ]}

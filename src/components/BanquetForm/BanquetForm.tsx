@@ -97,10 +97,9 @@ export default function BanquetForm() {
               <select id="b-event" name="event" ref={eventRef} onChange={() => clearError('event')}>
                 <option value="">Select event</option>
                 <option>Wedding Reception</option>
-                <option>Nikaah / Walima</option>
                 <option>Engagement</option>
                 <option>Mehndi / Sangeet</option>
-                <option>Milad / Religious Function</option>
+                <option>Haldi / Reception</option>
                 <option>Birthday / Anniversary</option>
                 <option>Corporate Gala</option>
                 <option>Other</option>

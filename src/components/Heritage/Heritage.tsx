@@ -6,24 +6,24 @@ export default function Heritage() {
       <section className="section" id="heritage" style={{ paddingBottom: 0 }}>
         <div className="sec-head">
           <div className="sec-head__num">I.</div>
-          <h2 className="sec-head__title reveal">A house built on <em>dastarkhwan.</em></h2>
+          <h2 className="sec-head__title reveal">A house built on the <em>grand Indian table.</em></h2>
           <div className="sec-head__aside">Heritage &amp; Philosophy</div>
         </div>
 
         <div className="heritage">
           <div className="heritage__left reveal">
             <h3 className="heritage__h">
-              The long, generous table of <em>Hyderabad —</em> served slowly, served well.
+              The long, generous table of <em>India —</em> cooked slowly, served with pride.
             </h3>
             <p className="heritage__dropcap">
               For over a decade, our kitchen has kept watch over a single, unhurried promise:
               rice grain by grain, masala stone by stone, the patience of a sealed handi and the
-              whisper of saffron in warm milk. Recipes carried down from a Nawabi household in the
-              old city, refined into a contemporary fine-dining grammar.
+              warmth of slow-simmered gravies. Recipes carried down from kitchens across Hyderabad,
+              Punjab and the southern coast, refined into a contemporary fine-dining experience.
             </p>
             <p className="heritage__body">
-              Every dish is plated with the reverence of a court banquet — slow, intentional,
-              and uncompromising. We don't cook biryani; we host it.
+              Every dish is plated with reverence — slow, intentional, and uncompromising.
+              From the tandoor to the tawa, we don't just cook; we celebrate India's table.
             </p>
             <div className="heritage__facts">
               <div>
@@ -47,7 +47,7 @@ export default function Heritage() {
         </div>
       </section>
 
-      <div className="divider-charminar reveal">
+      <div className="divider-mark reveal">
         <span className="bar"></span>
         <span className="mark"></span>
         <span className="bar"></span>

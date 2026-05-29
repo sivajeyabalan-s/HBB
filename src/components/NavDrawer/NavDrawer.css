@@ -19,7 +19,7 @@
   right: 0;
   bottom: 0;
   width: min(320px, 85vw);
-  background: var(--navy-2);
+  background: #131c32;
   border-left: 1px solid var(--line-strong);
   z-index: 49;
   display: flex;
@@ -41,7 +41,7 @@
   display: block;
   font-family: var(--f-display);
   font-size: 20px;
-  color: var(--ivory);
+  color: #f5ecd7;
   padding: 16px 0;
   border-bottom: 1px solid var(--line);
   transition: color 0.3s var(--ease), padding-left 0.3s var(--ease);

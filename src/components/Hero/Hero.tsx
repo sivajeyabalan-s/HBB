@@ -4,13 +4,13 @@ import './Hero.css'
 export default function Hero() {
   return (
     <header className="hero" id="top">
-      <div className="hero__charminar" aria-hidden="true">
+      <div className="hero__visual" aria-hidden="true">
         <img src="/assets/home/heroBG.png" alt="" />
       </div>
 
       <div className="hero__left">
         <div className="hero__top-stamp reveal">
-          · Dum Biryani, Kebabs &amp; Banquets
+          · Biryani · Tandoor · Coastal Curries · Punjabi Classics
         </div>
 
         <h1 className="hero__title reveal" data-delay="1">
@@ -23,9 +23,8 @@ export default function Hero() {
           <div className="hero__under-num">I</div>
           <div className='hero_sub2'>
             <p className="hero__sub">
-              A Nawabi table set beneath the watch of the four minarets — slow-cooked dum biryani,
-              heirloom kormas, and ceremony fit for any occasion. Restaurant, banquet hall and event
-              catering, under one regal roof.
+              Slow-cooked dum biryani, sizzling tandoor, coastal curries and Punjabi classics —
+              restaurant, banquet hall and event catering, under one grand roof.
             </p>
           </div>
         </div>
